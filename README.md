@@ -1,6 +1,5 @@
 # ACO para el TSP: 20, 2 000 y 200 000 ciudades
 
-Ant System (diapositivas de clase) en dos versiones del **mismo algoritmo**:
 
 | versión | representación | memoria | costo por hormiga |
 |---|---|---|---|
