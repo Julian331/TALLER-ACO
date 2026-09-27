@@ -1,16 +1,4 @@
-# Taller ACO — agente viajero con 20, 2 000 y 200 000 ciudades
-
-Laboratorio de Inteligencia Artificial (Universidad Sergio Arboleda, 2026).
-Gabriela Delgado Tibamoso · Julian Camilo Caro Herrera · Nicolás Steven Pérez Chuscano.
-
-La tarea era implementar colonia de hormigas (ACO) para el TSP y medir tiempo y
-memoria. Antes de programar hicimos la cuenta: el ACO de clase guarda dos matrices de
-n × n, y con 200 000 ciudades eso son 640 GB. Así que el trabajo terminó siendo otra
-pregunta: **¿cuánto se gana cambiando el diseño y cuánto cambiando el lenguaje?**
-
-El informe completo está en [`informe/informe.pdf`](informe/informe.pdf).
-
-## Qué hicimos
+## Lo que se hizo
 
 Dos versiones del mismo algoritmo (misma ruleta, misma evaporación, mismo depósito):
 
@@ -23,7 +11,7 @@ La optimizada está en C++, Rust, Java y Python; la normal, en C++ y Python. Con
 misma semilla, los cuatro lenguajes dan exactamente el mismo recorrido (lo
 comprobamos), así que las diferencias de tiempo son del lenguaje y no del código.
 
-## Lo que encontramos
+## Lo que se encontro
 
 | | resultado |
 |---|---|
