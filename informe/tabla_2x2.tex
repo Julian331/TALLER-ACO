@@ -1,0 +1,15 @@
+\begin{tabular}{lrrr}
+\toprule
+ & normal & optimizada & factor del diseño \\
+\midrule
+\multicolumn{4}{l}{\emph{tiempo por iteración (ms), $n=2000$}} \\
+Python & 3\,855.6 & 102.78 & 38$\times$ \\
+C++ & 60.6 & 1.54 & 39$\times$ \\
+factor del lenguaje & 64$\times$ & 67$\times$ & \textbf{2\,503$\times$} \\
+\midrule
+\multicolumn{4}{l}{\emph{memoria pico (MB), $n=2000$}} \\
+Python & 322.4 & 13.2 & 24$\times$ \\
+C++ & 67.5 & 4.3 & 16$\times$ \\
+factor del lenguaje & 4.8$\times$ & 3.1$\times$ & \\
+\bottomrule
+\end{tabular}

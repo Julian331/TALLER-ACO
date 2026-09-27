@@ -1,0 +1,9 @@
+bin/
+rust/target/
+resultados_rapido/
+__pycache__/
+informe/*.aux
+informe/*.log
+informe/*.out
+_para_borrar/
+*.bak

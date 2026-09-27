@@ -1,0 +1,138 @@
+Tours idénticos entre lenguajes: 25/25 combinaciones (versión, n, semilla)
+n=20      normal python     rep=5 t/it=     0.418 ms setup=      0.1 ms pared=    0.06 s mem=    10.0 MB best=4.1066±0.0598 brecha=+0.75%
+n=20      normal cpp-gcc    rep=5 t/it=     0.020 ms setup=      0.0 ms pared=    0.00 s mem=     3.7 MB best=4.1066±0.0598 brecha=+0.75%
+n=20      normal cpp-clang  rep=5 t/it=     0.021 ms setup=      0.0 ms pared=    0.00 s mem=     3.7 MB best=4.1066±0.0598 brecha=+0.75%
+n=20      opt    python     rep=5 t/it=     0.626 ms setup=      0.4 ms pared=    0.08 s mem=    10.0 MB best=4.0881±0.0232 brecha=+0.30%
+n=20      opt    java       rep=5 t/it=     0.170 ms setup=      0.8 ms pared=    0.08 s mem=    45.3 MB best=4.0881±0.0232 brecha=+0.30%
+n=20      opt    cpp-gcc    rep=5 t/it=     0.015 ms setup=      0.0 ms pared=    0.00 s mem=     3.7 MB best=4.0881±0.0232 brecha=+0.30%
+n=20      opt    cpp-clang  rep=5 t/it=     0.015 ms setup=      0.0 ms pared=    0.00 s mem=     3.7 MB best=4.0881±0.0232 brecha=+0.30%
+n=20      opt    rust       rep=5 t/it=     0.015 ms setup=      0.0 ms pared=    0.00 s mem=     2.2 MB best=4.0881±0.0232 brecha=+0.30%
+n=2000    normal python     rep=1 t/it=  3045.117 ms setup=    521.4 ms pared=  152.79 s mem=   317.2 MB best=56.2450±0.0000 brecha=+73.36%
+n=2000    normal cpp-gcc    rep=5 t/it=    80.519 ms setup=     42.2 ms pared=    4.07 s mem=    64.7 MB best=56.4623±0.5338 brecha=+74.03%
+n=2000    normal cpp-clang  rep=5 t/it=    71.564 ms setup=     39.1 ms pared=    3.62 s mem=    64.7 MB best=56.4623±0.5338 brecha=+74.03%
+n=2000    opt    python     rep=3 t/it=    80.524 ms setup=     65.2 ms pared=    4.11 s mem=    10.3 MB best=40.0687±0.1438 brecha=+23.50%
+n=2000    opt    java       rep=5 t/it=     4.923 ms setup=     28.7 ms pared=    0.33 s mem=    59.2 MB best=40.0582±0.1322 brecha=+23.47%
+n=2000    opt    cpp-gcc    rep=5 t/it=     2.639 ms setup=      2.6 ms pared=    0.14 s mem=     3.9 MB best=40.0582±0.1322 brecha=+23.47%
+n=2000    opt    cpp-clang  rep=5 t/it=     2.645 ms setup=      2.1 ms pared=    0.14 s mem=     3.9 MB best=40.0582±0.1322 brecha=+23.47%
+n=2000    opt    rust       rep=5 t/it=     2.829 ms setup=      2.5 ms pared=    0.15 s mem=     2.7 MB best=40.0582±0.1322 brecha=+23.47%
+n=200000  opt    python     rep=1 t/it= 10287.461 ms setup=   7363.9 ms pared=  110.45 s mem=    78.4 MB best=416.1353±0.0000 brecha=+30.44%
+n=200000  opt    java       rep=5 t/it=   526.783 ms setup=    489.2 ms pared=    5.85 s mem=   135.5 MB best=416.2483±0.4201 brecha=+30.48%
+n=200000  opt    cpp-gcc    rep=5 t/it=   413.815 ms setup=    310.3 ms pared=    4.46 s mem=    56.2 MB best=416.2483±0.4201 brecha=+30.48%
+n=200000  opt    cpp-clang  rep=5 t/it=   417.523 ms setup=    274.1 ms pared=    4.45 s mem=    56.2 MB best=416.2483±0.4201 brecha=+30.48%
+n=200000  opt    rust       rep=5 t/it=   467.116 ms setup=    297.9 ms pared=    4.97 s mem=    55.8 MB best=416.2483±0.4201 brecha=+30.48%
+2x2 tiempo: diseño Py 37.8x, diseño C++ 30.5x, lenguaje normal 37.8x, lenguaje opt 30.5x, total 1154x
+2x2 memoria: Py 317.2/10.3  C++ 64.7/3.9 MB
+Escalamiento normal: pendiente memoria 2.00, tiempo 2.39 (n>=2000, hasta 16000)
+Escalamiento opt: pendiente memoria 1.01, tiempo 1.22 (n>=50000, hasta 1000000)
+Memoria predicha opt: 277 B por ciudad
+Extrapolación normal a 200000: 29.3 min por iteración
+Error máximo de la predicción de memoria (opt): 0.53 MB
+Convergencia n=2000 normal: final 53.952, cruza NN en iteración None, t_busqueda 23.6 s
+Convergencia n=2000 opt: final 39.100, cruza NN en iteración 10, t_busqueda 0.7 s
+Convergencia n=200000 opt: final 390.062, cruza NN en iteración 271, t_busqueda 118.2 s
+
+BestNormalDosMil = 56.46
+BestOptDosMil = 40.06
+BestOptDoscientosMil = 416.2
+BhhDosMil = 32.44
+BhhDoscientosMil = 319.0
+BrechaNnDosMil = 30.3
+BrechaNnDoscientosMil = 22.4
+BrechaNormalDosMil = 74.0
+BrechaNormalVeinte = 0.75
+BrechaOptDosMil = 23.5
+BrechaOptDoscientosMil = 30.5
+BrechaOptVeinte = 0.30
+BytesPorCiudad = 277
+ConvCruceNNNormalDosMil = en ninguna de las iteraciones
+ConvCruceNNOptDosMil = en la iteración 10
+ConvCruceNNOptDoscientosMil = en la iteración 271
+ConvFinalNormalDosMil = 53.95
+ConvFinalOptDosMil = 39.10
+ConvFinalOptDoscientosMil = 390.1
+ConvItersNormalDosMil = 300
+ConvItersOptDosMil = 300
+ConvItersOptDoscientosMil = 300
+ConvTiempoNormalDosMil = 24
+ConvTiempoOptDosMil = 1
+ConvTiempoOptDoscientosMil = 118
+ErrMaxPredMem = 0.5
+ExitosNormalVeinte = 2/5
+ExitosOptVeinte = 3/5
+ExtrapTiempoNormalDoscientosMil = 29
+FallbackDosMil = 5.4
+FallbackDoscientosMil = 6.0
+HayClang = 1
+IterDosMil = 50
+IterDoscientosMil = 10
+IterVeinte = 100
+LnnDosMil = 42.28
+LnnDoscientosMil = 390.3
+MasaDosMil = 0.50
+MasaDoscientos = 0.66
+MasaDoscientosMil = 0.35
+MasaVeinte = 0.88
+MasaVeinteMil = 0.44
+MemBaseCpp = 3.7
+MemCppclangDosMil = 3.9
+MemCppclangDoscientosMil = 56.2
+MemCppgccDosMil = 3.9
+MemCppgccDoscientosMil = 56.2
+MemJavaBase = 45.3
+MemJavaDosMil = 59.2
+MemJavaDoscientosMil = 135.5
+MemNormalDosMil = 64.7
+MemOptDosMil = 3.9
+MemOptDoscientosMil = 56.2
+MemPredNormalDosMil = 64.7
+MemPredOptDosMil = 4.2
+MemPredOptDoscientosMil = 56.5
+MemPythonBase = 10.0
+MemPythonDosMil = 10.3
+MemPythonDoscientosMil = 78.4
+MemRustDosMil = 2.7
+MemRustDoscientosMil = 55.8
+NMaxNormal = 16\,000
+NMaxNormalMedido = 16\,000
+NMaxOpt = 1\,000\,000
+NMinAjusteNormal = 2\,000
+NMinAjusteOpt = 50\,000
+OptimoVeinte = 4.0758
+ParedCppVeinte = 3
+ParedJavaVeinte = 84
+ParedPythonVeinte = 76
+PendMemNormal = 2.00
+PendMemOpt = 1.01
+PendTiempoNormal = 2.39
+PendTiempoOpt = 1.22
+Plataforma = Linux-6.18.44-fc-v42-x86\_64-with-glibc2.39
+Procesador = x86\_64
+RatioDisenoCpp = 31
+RatioDisenoPython = 38
+RatioLenguajeDoscientosMil = 25
+RatioLenguajeNormal = 38
+RatioLenguajeOpt = 31
+RatioMemDosMil = 252
+RatioTotal = 1\,154
+RelCppclangDosMil = 1.00
+RelCppclangDoscientosMil = 1.01
+RelCppgccDosMil = 1.00
+RelCppgccDoscientosMil = 1.00
+RelJavaDosMil = 1.87
+RelJavaDoscientosMil = 1.27
+RelPythonDosMil = 30.51
+RelPythonDoscientosMil = 24.86
+RelRustDosMil = 1.07
+RelRustDoscientosMil = 1.13
+SetupOptDoscientosMil = 0.31
+TiempoHK = 0.53
+TitNormalDosMil = 80.5
+TitOptDosMil = 2.6
+TitOptDoscientosMil = 414
+ToursComparados = 25
+ToursIdenticos = 25
+VersionCppclang = Ubuntu clang version 18.1.3 (1ubuntu1)
+VersionCppgcc = g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+VersionJava = openjdk version "21.0.10" 2026-01-20
+VersionPython = 3.11.15
+VersionRust = rustc 1.95.0 (59807616e 2026-04-14)

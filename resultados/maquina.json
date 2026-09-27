@@ -1,0 +1,13 @@
+{
+  "plataforma": "Windows-11-10.0.26200-SP0",
+  "procesador": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "python": "3.13.7",
+  "compiladores": {
+    "cpp-gcc": "g++ (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 14.2.0",
+    "rust": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "java": "java version \"22.0.2\" 2024-07-16"
+  },
+  "ram_total_gb": 15.3,
+  "nucleos_fisicos": 6,
+  "nucleos_logicos": 12
+}
